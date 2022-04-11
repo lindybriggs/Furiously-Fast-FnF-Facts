@@ -1,0 +1,55 @@
+.mystyle{
+    border-style:solid;
+    margin:20px;
+    border-radius:15px;
+    color:white;
+}
+h4 {
+    display:inline;
+}
+
+header {
+    border-radius:15px;
+    min-height:100px;
+    background-color: #189026;
+    height:100px;
+}
+
+h5 {
+
+}
+.daytitle {
+    font-weight:bold;
+}
+.info {
+    font-size:14px;
+    font-weight:500
+}
+.this {
+    border-style:solid;
+}
+.lol {
+    background-color:rgb(145, 145, 145);
+    min-width:150px;
+}
+hr {
+   height:5px;
+   border-radius:15px;
+   background-color: #3a2f48;
+}
+#top1 {
+    margin-left:30px;
+    background-color:rgb(145, 145, 145);
+}
+#forecast {
+margin-left:30px;
+color:rgb(122, 116, 116);
+}
+
+@media only screen and (max-width: 600px) {
+    #forecastcontainer {
+      display:flex;
+      flex-direction:column;
+      text-align:center;
+    }
+  }
