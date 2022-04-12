@@ -1,3 +1,6 @@
+body {
+    background-color:rgb(0, 0, 0);
+}
 h4 {
     display:inline;
 }
@@ -14,7 +17,7 @@ header {
 }
 
 #card {
-    background-image: linear-gradient(gray, rgb(0, 0, 0));
+    background-image: linear-gradient(gray,rgb(74, 74, 74), rgb(0, 0, 0));
     min-width:300px;
     color: white;
 }
@@ -25,9 +28,21 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
-    #forecastcontainer {
+    #flexthis {
+        align-items:center;
       display:flex;
       flex-direction:column;
       text-align:center;
     }
   }
+
+
+  .this {
+      border-style:solid;
+      border-color:rgb(255, 255, 255);
+  }
+#select1 {
+    background-color:black;
+    color:white;
+    min-height:45px;
+}
