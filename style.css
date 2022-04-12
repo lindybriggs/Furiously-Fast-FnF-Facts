@@ -28,9 +28,9 @@ h5 {
 .this {
     border-style:solid;
 }
-.lol {
+#card {
     background-color:rgb(145, 145, 145);
-    min-width:150px;
+    min-width:300px;
 }
 hr {
    height:5px;
