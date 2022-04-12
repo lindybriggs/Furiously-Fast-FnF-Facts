@@ -24,7 +24,7 @@
   </head>
   
   <header class="m-2 d-flex justify-content-center">
-    <h3 class="text-center pt-4">Quick Movie Lookie (QLM)</h3>
+    <h3 class="text-center pt-4">Quick Movie Lookie (QML)</h3>
     <img class="ml-3 mt-3" height="50px" width="50px" src="./transparentpopcorn.png"></img>
     
   </header>
@@ -33,22 +33,22 @@
 
 
 
-<body class="bg-dark">
+<body>
   
-  <section class="d-flex">
-    <section class="mt-3 col-6 col-lg-2 pb-5">
+  <section id="flexthis" class="d-flex justify-content-around this">
+    <section class="mt-3 pb-5">
     
-        <select id="select1">
+        <select class="col-12" id="select1">
             <option value="Spiderman">Spiderman</option>
             <option value="Finding_Nemo">Finding Nemo</option>
             <option value="premium">Premium</option>
         </select>
-        <button id="search" class="btn btn-success col-12 mt-4" type="button">🔍</button>
+        <button id="search" class="btn btn-dark col-12 mt-4" type="button">🎬</button>
 
         </div>
         </section>
         <section>
-          <div id="card" class="alert alert-secondary d-flex col-10 flex-column m-2 col-sm-5 col-md-4 col-lg-12 mt-3" role="alert">
+          <div id="card" class="this alert alert-secondary d-flex col-10 flex-column m-2 mt-3" role="alert">
             <h5 id="movietitle" class="alert-heading">Movie Title</h5><div id="icondiv"></div>
             <a id="wiki" class="info">Super awesome details</a>
             <div class="d-flex">
