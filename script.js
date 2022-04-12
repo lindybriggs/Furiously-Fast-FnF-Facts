@@ -3,6 +3,8 @@ let videoLinkEl = document.getElementById("link")
 let wikiFactEl = document.getElementById("wiki")
 let searchButton = document.querySelector("#search")
 let userInput = document.getElementById("select1")
+let movieTitle = document.getElementById("movietitle");
+
 
 userInput.value = localStorage.getItem("history")
 
@@ -24,7 +26,8 @@ fetch(`https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&titles=${u
         return response.json();
     })
     .then(function (data) {
-        console.log(data)
+        console.log(data.query.pages[Object.keys(data.query.pages)[0]])
+        movieTitle.innerHTML = data.query.pages[Object.keys(data.query.pages)[0]].title;
         console.log(data.query.pages[Object.keys(data.query.pages)[0]].pageprops["wikibase-shortdesc"])
         wikiFactEl.innerHTML = data.query.pages[Object.keys(data.query.pages)[0]].pageprops["wikibase-shortdesc"];
 
