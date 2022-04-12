@@ -4,6 +4,7 @@ let wikiFactEl = document.getElementById("wiki")
 let searchButton = document.querySelector("#search")
 let userInput = document.getElementById("select1")
 let movieTitle = document.getElementById("movietitle");
+searchButton.addEventListener("click",button)
 
 
 userInput.value = localStorage.getItem("history")
