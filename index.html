@@ -22,9 +22,12 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Movie</title>
   </head>
-  <header class="m-2">
-    <h3 class="text-center pt-4">Super Awesome Movie Look Up</h3>
-</header>
+  
+  <header class="m-2 d-flex justify-content-center">
+    <h3 class="text-center pt-4">Quick Movie Lookie (QLM)</h3>
+    <img class="ml-3 mt-3" height="50px" width="50px" src="./transparentpopcorn.png"></img>
+    
+  </header>
 
 
 
@@ -40,15 +43,13 @@
             <option value="Finding_Nemo">Finding Nemo</option>
             <option value="premium">Premium</option>
         </select>
-        <button id="search" onclick="button();" class="btn btn-success col-12 mt-4" type="button">🔍</button>
+        <button id="search" class="btn btn-success col-12 mt-4" type="button">🔍</button>
         </div>
         </section>
         <section>
           <div id="card" class="alert alert-secondary d-flex col-10 flex-column m-2 col-sm-5 col-md-4 col-lg-12 mt-3" role="alert">
-            <h5 id="movietitle" class="alert-heading">Super Awesome Title</h5><div id="icondiv"></div>
+            <h5 id="movietitle" class="alert-heading">Movie Title</h5><div id="icondiv"></div>
             <a id="wiki" class="info">Super awesome details</a>
-            <a class="info">Super awesome details</a>
-            <a class="info">Super awesome details</a>
             <div class="d-flex">
               <a>Youtube Link:</a>
             <a id="link" href="" class="info"></a>
