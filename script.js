@@ -2,11 +2,12 @@ let apiKey = `AIzaSyBzlcyOrjLwEnxvKDzqolIoMFkY_beQBSg`;
 let videoLinkEl = document.getElementById("link")
 let wikiFactEl = document.getElementById("wiki")
 let searchButton = document.querySelector("#search")
+let userInput = document.getElementById("select1")
 
-searchButton.addEventListener("click", function (event) {
-    event.preventDefault();
 
-    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=YouTube+Data+API&type=video&videoCaption=closedCaption&key=${apiKey}`)
+
+function button() {
+    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${userInput.value}&type=video&videoCaption=closedCaption&key=${apiKey}`)
     .then(function (response) {
         return response.json();
     })
@@ -18,7 +19,7 @@ searchButton.addEventListener("click", function (event) {
     });
 
 
-fetch('https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&titles=Finding_Dory&format=json&origin=*')
+fetch(`https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&titles=${userInput.value}&format=json&origin=*`)
     .then(function (response) {
         return response.json();
     })
@@ -29,4 +30,8 @@ fetch('https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&titles=Fin
         wikiFactEl.innerHTML = data.query.pages[Object.keys(data.query.pages)[0]].pageprops["wikibase-shortdesc"];
 
     }); 
-})
+
+function consolelog(event) {
+console.log(event.target.innerHTML)
+}
+}
