@@ -43,3 +43,8 @@ header {
       text-align:center;
     }
   }
+
+  .this {
+      border-color:white;
+      border-style:solid;
+  }
