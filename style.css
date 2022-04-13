@@ -13,6 +13,10 @@ header {
     height: 100px;
 }
 
+#instructions {
+    color: white;
+}
+
 #search {
     background-color: rgb(242, 194, 27);
 }
