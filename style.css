@@ -1,15 +1,16 @@
 body {
-    background-color:rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
+
 h4 {
-    display:inline;
+    display: inline;
 }
 
 header {
-    border-radius:15px;
-    min-height:100px;
+    border-radius: 15px;
+    min-height: 100px;
     background-color: rgb(242, 194, 27);
-    height:100px;
+    height: 100px;
 }
 
 #search {
@@ -17,29 +18,30 @@ header {
 }
 
 #card {
-    background-image: linear-gradient(gray,rgb(74, 74, 74), rgb(0, 0, 0));
-    min-width:10rem;
+    background-image: linear-gradient(gray, rgb(74, 74, 74), rgb(0, 0, 0));
+    min-width: 10rem;
     color: white;
 }
 
 #select1 {
-    background-color:black;
-    color:white;
-    min-height:45px;
+    background-color: black;
+    color: white;
+    min-height: 45px;
 }
 
 .test {
-    min-width:100px;
+    min-width: 100px;
 }
+
 @media only screen and (max-width: 600px) {
     #select1 {
-        min-height:45px;
+        min-height: 45px;
     }
-    
+
     #flexthis {
-        align-items:center;
-      display:flex;
-      flex-direction:column;
-      text-align:center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
-  }
+}
