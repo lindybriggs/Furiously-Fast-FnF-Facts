@@ -4,6 +4,7 @@ let wikiFactEl = document.getElementById("wiki")
 let searchButton = document.querySelector("#search")
 let userInput = document.getElementById("select1")
 let movieTitle = document.getElementById("movietitle");
+let infoCard = document.querySelector("#card")
 searchButton.addEventListener("click", button)
 
 
@@ -17,8 +18,11 @@ function button() {
         })
         .then(function (data) {
             let videoLink = "https://www.youtube.com/watch?v=" + data.items[0].id.videoId;
+            let videoLink2 = data.items[0].id.videoId
             videoLinkEl.innerHTML = videoLink;
             videoLinkEl.setAttribute("href", videoLink)
+
+            embedLink(videoLink2);
         });
 
 
@@ -33,5 +37,14 @@ function button() {
             wikiFactEl.innerHTML = data.query.pages[Object.keys(data.query.pages)[0]].pageprops["wikibase-shortdesc"];
 
         });
+}
 
+function embedLink(videoLink2){
+    let videoDisplayed = document.createElement("div")
+    console.log(videoLink2)
+
+    videoDisplayed.innerHTML = `
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/${videoLink2}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    `
+    infoCard.appendChild(videoDisplayed);
 }
