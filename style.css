@@ -18,16 +18,24 @@ header {
 
 #card {
     background-image: linear-gradient(gray,rgb(74, 74, 74), rgb(0, 0, 0));
-    min-width:300px;
+    min-width:10rem;
     color: white;
 }
-hr {
-   height:5px;
-   border-radius:15px;
-   background-color: #3a2f48;
+
+#select1 {
+    background-color:black;
+    color:white;
+    min-height:45px;
 }
 
+.test {
+    min-width:100px;
+}
 @media only screen and (max-width: 600px) {
+    #select1 {
+        min-height:45px;
+    }
+    
     #flexthis {
         align-items:center;
       display:flex;
@@ -35,14 +43,3 @@ hr {
       text-align:center;
     }
   }
-
-
-  .this {
-      border-style:solid;
-      border-color:rgb(255, 255, 255);
-  }
-#select1 {
-    background-color:black;
-    color:white;
-    min-height:45px;
-}
