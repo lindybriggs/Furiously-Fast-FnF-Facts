@@ -25,6 +25,7 @@ header {
     background-image: linear-gradient(gray, rgb(74, 74, 74), rgb(0, 0, 0));
     min-width: 10rem;
     color: white;
+    border-style:none;
 }
 
 #select1 {
