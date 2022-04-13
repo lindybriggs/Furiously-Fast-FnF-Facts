@@ -2,6 +2,7 @@ let apiKey = `AIzaSyBzlcyOrjLwEnxvKDzqolIoMFkY_beQBSg`;
 let videoLinkEl = document.getElementById("link")
 let wikiFactEl = document.getElementById("wiki")
 let searchButton = document.querySelector("#search")
+let embeddedVideo = document.querySelector(".video1")
 let userInput = document.getElementById("select1")
 let movieTitle = document.getElementById("movietitle");
 let infoCard = document.querySelector("#card")
@@ -40,11 +41,11 @@ function button() {
 }
 
 function embedLink(videoLink2){
-    let videoDisplayed = document.createElement("div")
+    let videoDisplayed = document.getElementById("videodiv");
     console.log(videoLink2)
 
     videoDisplayed.innerHTML = `
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/${videoLink2}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="video1" width="560" height="315" src="https://www.youtube.com/embed/${videoLink2}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `
     infoCard.appendChild(videoDisplayed);
 }
