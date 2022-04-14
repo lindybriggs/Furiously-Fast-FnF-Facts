@@ -38,6 +38,12 @@ header {
     min-width: 100px;
 }
 
+#racing {
+    position:absolute;
+    margin-top:73px
+}
+
+
 
 @media only screen and (max-width: 791px) {
     #select1 {

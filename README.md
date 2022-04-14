@@ -10,7 +10,6 @@ Wiki API - Pulling short movie description including director and year of releas
 
 https://notaddedyet.com
 
-
 ## Screenshot
 ![MovieAPIWebsite](/screenshot.png "Application Screenshot")
 
