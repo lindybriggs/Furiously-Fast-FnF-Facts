@@ -8,6 +8,7 @@ let embeddedVideo = document.querySelector(".video1")
 let userInput = document.getElementById("select1")
 let movieTitle = document.getElementById("movietitle");
 let infoCard = document.querySelector("#card")
+let plotEl = document.querySelector("#plot")
 // Event listener for the search button.
 searchButton.addEventListener("click", button)
 
@@ -54,7 +55,8 @@ function button() {
 
         .then(function (data) {
             console.log(omdbMovie)
-            console.log(data);
+            console.log(data.Plot);
+            plotEl.innerHTML = data.Plot;
         });
 }
 
