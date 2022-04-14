@@ -1,5 +1,6 @@
 // Delcaring Variables.
 let apiKey = `AIzaSyBzlcyOrjLwEnxvKDzqolIoMFkY_beQBSg`;
+let apiKeyOmdb = `664ace4d`;
 let videoLinkEl = document.getElementById("link")
 let wikiFactEl = document.getElementById("wiki")
 let searchButton = document.querySelector("#search")
@@ -43,6 +44,17 @@ function button() {
             console.log(data.query.pages[Object.keys(data.query.pages)[0]].pageprops["wikibase-shortdesc"])
             wikiFactEl.innerHTML = data.query.pages[Object.keys(data.query.pages)[0]].pageprops["wikibase-shortdesc"];
 
+        });
+    let omdbMovie = document.querySelector("select option:checked").dataset.movie
+
+    fetch(`http://www.omdbapi.com/?i=${omdbMovie}&apikey=${apiKeyOmdb}`)
+        .then(function (response) {
+            return response.json();
+        })
+
+        .then(function (data) {
+            console.log(omdbMovie)
+            console.log(data);
         });
 }
 
