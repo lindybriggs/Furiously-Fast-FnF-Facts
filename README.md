@@ -13,16 +13,25 @@ Local storage is used to save the user's previous dropdown inquiry.
 
 ## User Story
 
-AS AN action movie enthusiast
-I WANT to widen and refresh my knowledge on the F & F movie series
-SO THAT I understand the differences between the 9 movies.
+    AS AN action movie enthusiast
 
-## Deployed Application link
+    I WANT to widen and refresh my knowledge on the F & F movie series
 
-https://lindybriggs.github.io/Project-1/
+    SO THAT I understand the differences between the 9 movies.
+
+
+## Links
+
+Depoloyed Application: https://lindybriggs.github.io/Project-1/
+
+GitHub Repo: https://github.com/lindybriggs/Project-1
+
 
 ## Screenshot
-![MovieAPIWebsite](/screenshot.png "Application Screenshot")
+
+![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/101146153/163578215-1644894b-a96a-42a4-9f20-6783b3e2e152.gif)
+
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)

@@ -64,10 +64,16 @@ function button() {
 // Function to load embedded video.
 function embedLink(videoLink2) {
     let videoDisplayed = document.getElementById("videodiv");
-    console.log(videoLink2)
+    console.log(userInput.value)
 
-    videoDisplayed.innerHTML = `
+    if (userInput.value == "") {
+        videoDisplayed.innerHTML = ""
+    } else {
+        console.log(videoLink2)
+
+        videoDisplayed.innerHTML = `
     <iframe class="video1 col-12 col-lg-10 col-md-12 mb-5 mt-2" width="" height="375" src="https://www.youtube.com/embed/${videoLink2}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     `
-    infoCard.appendChild(videoDisplayed);
+        infoCard.appendChild(videoDisplayed);
+    }
 }
