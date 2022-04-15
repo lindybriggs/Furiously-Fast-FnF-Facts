@@ -1,5 +1,6 @@
 // Delcaring Variables.
 let apiKey = `AIzaSyBzlcyOrjLwEnxvKDzqolIoMFkY_beQBSg`;
+let apiKeyBackup = `AIzaSyCWNdvTLQVZWhiyzNwJKGFJuFWjb630gcs`;
 let apiKeyOmdb = `664ace4d`;
 let videoLinkEl = document.getElementById("link")
 let wikiFactEl = document.getElementById("wiki")
