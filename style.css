@@ -43,7 +43,10 @@ header {
     margin-top:73px
 }
 
-
+.dis option{
+    padding:5px 0;
+   
+    }
 
 @media only screen and (max-width: 791px) {
     #select1 {
@@ -57,3 +60,5 @@ header {
         text-align: center;
     }
 }
+
+
